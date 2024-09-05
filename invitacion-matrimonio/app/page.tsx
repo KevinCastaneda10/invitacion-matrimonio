@@ -1,4 +1,4 @@
-import InvitationCard from "../components/InvitationCard";
+import InvitationCard from "../components/Home";
 
 const Home: React.FC = () => {
   return (
