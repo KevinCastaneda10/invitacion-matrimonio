@@ -2,24 +2,23 @@
 import React from "react";
 import Head from "next/head";
 
-// Define los estilos en una variable (ajusta los estilos según prefieras)
-const styles = {
-  h1: {
+const Header: React.FC = () => {
+  // Define los estilos para cada elemento directamente
+  const h1Style: React.CSSProperties = {
     fontSize: "2rem",
     fontWeight: "bold",
     color: "#333",
     textAlign: "center",
     fontFamily: "'Great Vibes', cursive", // Cambia la fuente aquí
-  },
-  p: {
+  };
+
+  const pStyle: React.CSSProperties = {
     fontSize: "1.5rem",
     color: "#666",
     textAlign: "center",
     fontFamily: "'Great Vibes', cursive", // Cambia la fuente aquí
-  },
-};
+  };
 
-const Header: React.FC = () => {
   return (
     <>
       {/* Asegúrate de incluir la fuente en el Head */}
@@ -41,16 +40,16 @@ const Header: React.FC = () => {
         style={{
           backgroundImage: 'url("/fondo1.jpeg")',
           backgroundSize: "cover", // Cambiado a cover
-          backgroundPosition: "center", // Puedes dejar esto
-          backgroundRepeat: "no-repeat", // Puedes dejar esto
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div>
           {/* Aplica los estilos a las etiquetas */}
-          <h1 style={styles.h1}>
+          <h1 style={h1Style}>
             ¡NOS <br /> CASAMOS!
           </h1>
-          <p style={styles.p}>Viviana y Jhon</p>
+          <p style={pStyle}>Viviana y Jhon</p>
         </div>
       </div>
     </>

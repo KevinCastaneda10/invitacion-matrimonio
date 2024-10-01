@@ -1,4 +1,4 @@
-import Header from "@/components/page";
+import Header from "@/components/Header";
 import CountdownTimer from "../components/CountdownTimer";
 
 const Home: React.FC = () => {
